@@ -1,0 +1,33 @@
+{
+  "name": "ts-gecko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "npx swagger-typescript-api -p ./swagger/swagger.json -o ./src -n api.ts && npx prettier --write src/api.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phl3x0r/ts-gecko.git"
+  },
+  "author": "Niklas Hegnelt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phl3x0r/ts-gecko/issues"
+  },
+  "homepage": "https://github.com/phl3x0r/ts-gecko#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "swagger-typescript-api": "^9.2.0"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "node-fetch": "^2.6.5"
+  }
+}
