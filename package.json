@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^3.0.0",
-    "node-fetch": "^2.6.5"
+    "node-fetch": "^2.6.5",
+    "rxjs": "^7.4.0"
   }
 }
